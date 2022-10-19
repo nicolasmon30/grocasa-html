@@ -1,0 +1,21 @@
+.header {
+    &__container {
+        width: calc(100% - 64px);
+        max-width: 1600px;
+        margin: 10px auto 30px;
+        @media only screen and (max-width: 1024px){
+            margin: 20px auto 30px;
+
+        }
+    }
+    &__logo{
+        width: 100%;
+        max-width: 200px;
+        @media only screen and (max-width: 1024px){
+            margin: 0 auto;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}

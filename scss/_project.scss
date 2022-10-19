@@ -1,0 +1,107 @@
+.project{
+    &__thumbnail{
+        width: 100%;
+        height: 220px;
+        margin: 0 0 20px;
+        @media only screen and (max-width: 480px){
+            height: 130px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__body{
+        margin: 0 0 20px;
+    }
+    &__title{
+        h3{
+            font-size: 32px;
+            color: #ff5000;
+            @media only screen and (max-width: 480px){
+                font-size: 20px;
+                line-height: 1;
+            }
+        }
+    }
+    &__location{
+        p{
+            font-size: 20px;
+            font-weight: 300;
+            color: rgba(#797979,.7);
+            @media only screen and (max-width: 480px){
+                font-size: 16px;
+            }
+        }
+    }
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__price{
+        h4{
+            font-size: 40px;
+            color: #797979;
+            @media only screen and (max-width: 1440px){
+                font-size: 32px;
+            }
+            @media only screen and (max-width: 480px){
+                font-size: 16px;
+            }
+        }
+    }
+    &__amenities{
+        ul{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
+            @media only screen and (max-width: 480px){
+                gap: 10px;
+            }
+            li{
+                text-align: center;
+                list-style: none;
+                list-style-type: none;
+                &:first-child{
+                    @media only screen and (max-width: 480px){
+                        text-align: left;
+                    }
+                    img{
+                        width: 25px;
+                        height: auto;
+                        @media only screen and (max-width: 480px){
+                            width: 18px;
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    img{
+                        width: 45px;
+                        height: auto;
+                        @media only screen and (max-width: 480px){
+                            width: 25px;
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    img{
+                        width: 24px;
+                        height: auto;
+                        @media only screen and (max-width: 480px){
+                            width: 15px;
+                        }
+                    }
+                }
+                p{
+                    color: #797979;
+                    @media only screen and (max-width: 480px){
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
